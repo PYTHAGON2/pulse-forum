@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "category_id": 3,
+        "user_id": 3,
+        "title": "Building Lightweight Web Applications with Vanilla PHP",
+        "created_at": "2026-09-24 19:51:07",
+        "updated_at": "2026-09-24 19:51:07",
+        "views": 0,
+        "is_pinned": 0,
+        "is_locked": 0
+    },
+    {
+        "id": 2,
+        "category_id": 4,
+        "user_id": 4,
+        "title": "Best Practices for Web Security on Free Hosting Plans",
+        "created_at": "2026-09-24 19:51:07",
+        "updated_at": "2026-09-24 19:51:07",
+        "views": 0,
+        "is_pinned": 0,
+        "is_locked": 0
+    },
+    {
+        "id": 3,
+        "category_id": 3,
+        "user_id": 3,
+        "title": "Automated Thread Creation Test",
+        "created_at": "2026-09-24 19:54:06",
+        "updated_at": "2026-09-24 19:54:06",
+        "views": 0,
+        "is_pinned": 0,
+        "is_locked": 0
+    },
+    {
+        "id": 4,
+        "category_id": 1,
+        "user_id": 2,
+        "title": "What Good?",
+        "created_at": "2026-09-24 19:58:00",
+        "updated_at": "2026-09-24 19:58:00",
+        "views": 2,
+        "is_pinned": 0,
+        "is_locked": 0
+    }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "General",
+        "slug": "general",
+        "description": "General discussions and casual chats.",
+        "icon": "chat-bubble",
+        "color": "#6366f1",
+        "display_order": 1
+    },
+    {
+        "id": 2,
+        "name": "Technology",
+        "slug": "technology",
+        "description": "Tech news, hardware, and gadgets.",
+        "icon": "cpu",
+        "color": "#06b6d4",
+        "display_order": 2
+    },
+    {
+        "id": 3,
+        "name": "Programming",
+        "slug": "programming",
+        "description": "Code snippets, web dev, and algorithms.",
+        "icon": "code",
+        "color": "#10b981",
+        "display_order": 3
+    },
+    {
+        "id": 4,
+        "name": "Cybersecurity",
+        "slug": "cybersecurity",
+        "description": "Security analysis and info-sec news.",
+        "icon": "shield-check",
+        "color": "#ef4444",
+        "display_order": 4
+    },
+    {
+        "id": 5,
+        "name": "AI & Data",
+        "slug": "ai",
+        "description": "Artificial Intelligence and ML.",
+        "icon": "sparkles",
+        "color": "#a855f7",
+        "display_order": 5
+    },
+    {
+        "id": 6,
+        "name": "Gaming",
+        "slug": "gaming",
+        "description": "Video games and hardware.",
+        "icon": "gamepad",
+        "color": "#f59e0b",
+        "display_order": 6
+    },
+    {
+        "id": 7,
+        "name": "Music & Art",
+        "slug": "art",
+        "description": "Creative showcase and digital design.",
+        "icon": "palette",
+        "color": "#ec4899",
+        "display_order": 7
+    }
+]

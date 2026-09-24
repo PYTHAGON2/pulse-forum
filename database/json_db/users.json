@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "username": "tosin_dev",
+        "email": "tosin@example.com",
+        "password_hash": "$2y$10$PAUNkSGFR0mekekEcOV6zuzF4egzalJ77BIBAniyx22mYQBW3YSfi",
+        "avatar": "default.png",
+        "bio": "Hello! I am a member of Pulse Community.",
+        "reputation": 0,
+        "created_at": "2026-09-24 19:14:50"
+    },
+    {
+        "id": 2,
+        "username": "samuel",
+        "email": "abcthingx@gmail.com",
+        "password_hash": "$2y$10$OsJ1kDjixHVRoJSJOHd0R.7KLgzlyuYYKJX5BYHLguG7JItuYbI.q",
+        "avatar": "default.png",
+        "bio": "Hello! I am a member of Pulse Community.",
+        "reputation": 0,
+        "created_at": "2026-09-24 19:19:53"
+    },
+    {
+        "id": 3,
+        "username": "alex_dev",
+        "email": "alex@example.com",
+        "password_hash": "$2y$10$v7Q.8MBxdeZ0ldsO4fXTNOTDPqnngAeBSpt4k4EpTXEdoEWdA3md2",
+        "avatar": "default.png",
+        "bio": "Hello! I am a member of Pulse Community.",
+        "reputation": 0,
+        "created_at": "2026-09-24 19:51:06"
+    },
+    {
+        "id": 4,
+        "username": "sarah_sec",
+        "email": "sarah@example.com",
+        "password_hash": "$2y$10$n0X4IN9X.oyOzrXvRBFQX.MuBWN5h4fR\/9iGE2JcEoj2quUeSxLIW",
+        "avatar": "default.png",
+        "bio": "Hello! I am a member of Pulse Community.",
+        "reputation": 0,
+        "created_at": "2026-09-24 19:51:06"
+    },
+    {
+        "id": 5,
+        "username": "elena_ai",
+        "email": "elena@example.com",
+        "password_hash": "$2y$10$vuJ8xEEJ5GZblSJvlfiAuOhm0Ox4\/9rsbCzoVP3WGK78w7z9yxoHy",
+        "avatar": "default.png",
+        "bio": "Hello! I am a member of Pulse Community.",
+        "reputation": 0,
+        "created_at": "2026-09-24 19:51:06"
+    }
+]
