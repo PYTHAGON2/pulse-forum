@@ -21,15 +21,14 @@ if ($method === 'GET') {
         jsonResponse(['error' => 'Thread ID is required.'], 400);
     }
 
-    // Get total posts count
-    $stmt = $db->prepare("SELECT COUNT(*) as total FROM posts WHERE thread_id = ?");
-    $stmt->execute([$threadId]);
-    $totalPosts = (int)$stmt->fetch()['total'];
-
     // Fetch posts with author profile and vote status for current logged-in user
     $currentUserId = $currentUser ? $currentUser['id'] : 0;
     
     if ($db) {
+        $stmt = $db->prepare("SELECT COUNT(*) as total FROM posts WHERE thread_id = ?");
+        $stmt->execute([$threadId]);
+        $totalPosts = (int)$stmt->fetch()['total'];
+
         $query = "SELECT p.id, p.thread_id, p.user_id, p.content, p.attachment, p.upvotes, p.is_original_post, p.created_at, p.updated_at,
                          u.username, u.avatar, u.reputation,
                          (SELECT COUNT(*) FROM posts WHERE user_id = u.id) as user_post_count,
@@ -46,6 +45,8 @@ if ($method === 'GET') {
     } else {
         $jsonDb = getJSONDB();
         $posts = $jsonDb->getPosts($threadId, $currentUserId);
+        $totalPosts = count($posts);
+        $posts = array_slice($posts, $offset, $limit);
     }
 
 

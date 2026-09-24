@@ -122,7 +122,17 @@ $csrfToken = getCSRFToken();
                 const res = await fetch(`api/posts.php?thread_id=${threadId}`);
                 const data = await res.json();
                 
-                document.getElementById('replies-count-title').textContent = `${data.pagination.total_items} Comments`;
+                if (!res.ok || !data.posts) {
+                    container.innerHTML = `<div class="card" style="color: var(--status-danger); padding: 1.5rem; text-align: center;">${data.error || 'Failed to load comments.'}</div>`;
+                    return;
+                }
+                
+                document.getElementById('replies-count-title').textContent = `${data.pagination ? data.pagination.total_items : data.posts.length} Comments`;
+
+                if (data.posts.length === 0) {
+                    container.innerHTML = `<div class="card" style="color: var(--text-dim); padding: 1.5rem; text-align: center;">No replies yet. Be the first to join the conversation!</div>`;
+                    return;
+                }
 
                 container.innerHTML = data.posts.map(post => `
                     <div class="card" id="post-${post.id}" style="display: flex; gap: 1rem; ${post.is_original_post ? 'border-left: 4px solid var(--accent-primary);' : ''}">
@@ -152,7 +162,7 @@ $csrfToken = getCSRFToken();
                     </div>
                 `).join('');
             } catch (err) {
-                container.innerHTML = `<div class="card" style="color: var(--status-danger);">Failed to load comments.</div>`;
+                container.innerHTML = `<div class="card" style="color: var(--status-danger); padding: 1.5rem; text-align: center;">Failed to load comments.</div>`;
             }
         }
 
